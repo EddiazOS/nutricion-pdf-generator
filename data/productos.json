@@ -1,0 +1,60 @@
+{
+  "productos": [
+    {
+      "id": "granola_crujiente",
+      "nombre": "Granola Crujiente",
+      "marca": "Tu Marca",
+      "tamanio_porcion": "1 cucharadita (3 g)",
+      "porciones_envase": 20,
+      "nutrientes": {
+        "energia_kcal_100g": 342,
+        "energia_kcal_porcion": 10,
+        "grasa_total_100g": 1.3,
+        "grasa_total_porcion": 0,
+        "grasa_saturada_100g": 0.72,
+        "grasa_saturada_porcion": 0,
+        "grasa_trans_mg": 0,
+        "carbohidratos_100g": 74,
+        "carbohidratos_porcion": 2.2,
+        "fibra_dietaria_100g": 23,
+        "fibra_dietaria_porcion": 0.68,
+        "azucares_totales_100g": 7.5,
+        "azucares_totales_porcion": 0.23,
+        "azucares_anadidos": 0,
+        "proteina_100g": 8.5,
+        "proteina_porcion": 0.26,
+        "sodio_mg_100g": 13,
+        "sodio_mg_porcion": 0.40,
+        "vitamina_a_er": 0,
+        "vitamina_d_ug": 0,
+        "hierro_mg_100g": 23,
+        "hierro_mg_porcion": 0.68,
+        "calcio_mg_100g": 177,
+        "calcio_mg_porcion": 5.3,
+        "zinc_mg_100g": 4.5,
+        "zinc_mg_porcion": 0.14
+      },
+      "ingredientes": [
+        "Avena integral",
+        "Miel",
+        "Aceite de girasol",
+        "Almendras",
+        "Arándanos secos",
+        "Semillas de chía",
+        "Sal marina"
+      ],
+      "alergenicos": [
+        "Contiene almendras (frutos secos)",
+        "Puede contener trazas de: cacahuete, otros frutos secos, sésamo"
+      ],
+      "modo_uso": "Consumir una cucharadita diaria. Ideal para desayunos, yogures o smoothies.",
+      "referencias": {
+        "fabricante": "Tu Empresa S.A.",
+        "pais_origen": "Colombia",
+        "lote": "202601-A",
+        "vencimiento": "12 meses desde la fecha de elaboración",
+        "conservacion": "Mantener en lugar fresco y seco"
+      }
+    }
+  ]
+}
