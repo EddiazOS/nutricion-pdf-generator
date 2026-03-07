@@ -7,15 +7,19 @@ import click
 
 ROOT = Path(__file__).resolve().parent.parent
 TEMPLATES_DIR = ROOT / "templates"
+DATA_DIR = ROOT / "data"
 OUTPUT_DIR = ROOT / "output"
+DEFAULT_TEMPLATE = "tabla_nutricional_generica.typ"
 
 
-def run_typst_compile(template_path: Path, output_path: Path) -> None:
+def run_typst_compile(template_path: Path, output_path: Path, data_path: Path) -> None:
     command = [
         "typst",
         "compile",
         str(template_path),
         str(output_path),
+        "--input",
+        f"data={data_path.relative_to(ROOT)}",
     ]
     subprocess.run(command, check=True, cwd=ROOT)
 
@@ -24,39 +28,64 @@ def run_typst_compile(template_path: Path, output_path: Path) -> None:
 @click.option(
     "--template",
     "template_name",
-    default=None,
-    help="Nombre del archivo .typ dentro de templates/ para compilar uno solo.",
+    default=DEFAULT_TEMPLATE,
+    show_default=True,
+    help="Nombre del archivo .typ dentro de templates/.",
 )
-def main(template_name: str | None) -> None:
+@click.option(
+    "--data",
+    "data_name",
+    default=None,
+    help="Nombre del archivo .yaml dentro de data/ para compilar uno solo.",
+)
+@click.option(
+    "--output",
+    "output_name",
+    default=None,
+    help="Nombre del PDF de salida dentro de output/.",
+)
+def main(template_name: str, data_name: str | None, output_name: str | None) -> None:
     if not TEMPLATES_DIR.exists():
         raise click.ClickException(f"No existe el directorio de plantillas: {TEMPLATES_DIR}")
+    if not DATA_DIR.exists():
+        raise click.ClickException(f"No existe el directorio de datos: {DATA_DIR}")
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    if template_name:
-        template_path = TEMPLATES_DIR / template_name
-        if not template_path.exists():
-            raise click.ClickException(f"Plantilla no encontrada: {template_path}")
-        templates = [template_path]
-    else:
-        templates = sorted(TEMPLATES_DIR.glob("*.typ"))
+    template_path = TEMPLATES_DIR / template_name
+    if not template_path.exists():
+        raise click.ClickException(f"Plantilla no encontrada: {template_path}")
 
-    if not templates:
-        raise click.ClickException("No se encontraron archivos .typ en templates/")
+    if data_name:
+        data_path = DATA_DIR / data_name
+        if not data_path.exists():
+            raise click.ClickException(f"Archivo de datos no encontrado: {data_path}")
+        data_files = [data_path]
+    else:
+        data_files = sorted(DATA_DIR.glob("*.yaml"))
+
+    if not data_files:
+        raise click.ClickException("No se encontraron archivos .yaml en data/")
 
     compiled = 0
-    for template_path in templates:
-        output_path = OUTPUT_DIR / f"{template_path.stem}.pdf"
+    for data_path in data_files:
+        pdf_name = output_name or f"{data_path.stem}.pdf"
+        output_path = OUTPUT_DIR / pdf_name
         try:
-            run_typst_compile(template_path, output_path)
-            click.echo(f"Generado: {output_path.relative_to(ROOT)}")
+            run_typst_compile(template_path, output_path, data_path)
+            click.echo(
+                f"Generado: {output_path.relative_to(ROOT)} usando {data_path.relative_to(ROOT)}"
+            )
             compiled += 1
         except subprocess.CalledProcessError as exc:
             raise click.ClickException(
-                f"Falló la compilación de {template_path.name} con código {exc.returncode}"
+                f"Falló la compilación de {data_path.name} con código {exc.returncode}"
             ) from exc
 
-    click.echo(f"Plantillas compiladas: {compiled}")
+        if output_name:
+            break
+
+    click.echo(f"Archivos compilados: {compiled}")
 
 
 if __name__ == "__main__":
