@@ -1,0 +1,55 @@
+empresa:
+  nombre: "Faldas de la Sierra"
+  origen: "La Guajira, Colombia"
+
+contenido_neto: "200 mL"
+porcion_texto: "1 cucharada (15 mL)"
+porciones_por_envase: 13
+
+textos:
+  ingredientes: "Aceite de coco."
+  alergenos: "No se declaran alérgenos comunes."
+  uso_sugerido: "Uso culinario y alimentario."
+  conservacion: "Mantener en lugar fresco y seco, protegido de la luz."
+
+nutricion:
+  calorias_100ml: 824
+  calorias_porcion: 124
+  calorias_grasa_100ml: 824
+  calorias_grasa_porcion: 124
+
+  grasa_total_100ml: "91.5 g"
+  grasa_total_porcion: "13.7 g"
+
+  grasa_saturada_100ml: "75.8 g"
+  grasa_saturada_porcion: "11.4 g"
+
+  grasa_trans_100ml: "0 g"
+  grasa_trans_porcion: "0 g"
+
+  grasa_mono_100ml: "5.8 g"
+  grasa_mono_porcion: "0.9 g"
+
+  grasa_poli_100ml: "1.6 g"
+  grasa_poli_porcion: "0.2 g"
+
+  carbohidratos_100ml: "0 g"
+  carbohidratos_porcion: "0 g"
+
+  fibra_100ml: "0 g"
+  fibra_porcion: "0 g"
+
+  azucares_totales_100ml: "0 g"
+  azucares_totales_porcion: "0 g"
+
+  azucares_anadidos_100ml: "0 g"
+  azucares_anadidos_porcion: "0 g"
+
+  proteina_100ml: "0 g"
+  proteina_porcion: "0 g"
+
+  sodio_100ml: "0 mg"
+  sodio_porcion: "0 mg"
+
+  colesterol_100ml: "0 mg"
+  colesterol_porcion: "0 mg"
