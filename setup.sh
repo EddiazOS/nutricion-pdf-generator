@@ -66,7 +66,7 @@ echo -e "${GREEN}✅ 🌟 Setup completado exitosamente!${NC}"
 echo -e "${GREEN}================================================${NC}\n"
 
 echo -e "${BLUE}Próximos pasos:${NC}"
-echo -e "1. Edita ${BLUE}data/productos.json${NC} con tus productos"
+echo -e "1. Agrega tus archivos ${BLUE}.yaml${NC} en la carpeta ${BLUE}data/${NC}"
 echo -e "2. Ejecuta: ${BLUE}python src/generator.py${NC}"
 echo -e "3. Los PDFs se generarán en ${BLUE}output/${NC}\n"
 

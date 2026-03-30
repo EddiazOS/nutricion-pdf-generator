@@ -1,0 +1,59 @@
+empresa:
+  nombre: "Faldas de la Sierra"
+  origen: "La Guajira, Colombia"
+
+contenido_neto: "60 g"
+porcion_texto: "1 cucharadita (3.0 g)"
+porciones_por_envase: 20
+
+columnas:
+  columna_100: "Por 100 g"
+  columna_porcion: "Por porción (3.0 g)"
+
+textos:
+  ingredientes: "Cúrcuma en polvo, jengibre, canela y pimienta negra."
+  alergenos: "No se declaran alérgenos comunes."
+  uso_sugerido: "Añadir a bebidas o comidas."
+  conservacion: "Mantener en lugar fresco y seco."
+
+nutricion:
+  calorias_100: 309
+  calorias_porcion: 10
+  calorias_grasa_100: 30
+  calorias_grasa_porcion: 1
+
+  grasa_total_100: "3.3 g"
+  grasa_total_porcion: "0.2 g"
+
+  grasa_saturada_100: "2.0 g"
+  grasa_saturada_porcion: "0.10 g"
+
+  grasa_trans_100: "0 mg"
+  grasa_trans_porcion: "0 mg"
+
+  grasa_mono_100: "0 g"
+  grasa_mono_porcion: "0 g"
+
+  grasa_poli_100: "0 g"
+  grasa_poli_porcion: "0 g"
+
+  carbohidratos_100: "66.9 g"
+  carbohidratos_porcion: "2.0 g"
+
+  fibra_100: "23.1 g"
+  fibra_porcion: "0.5 g"
+
+  azucares_totales_100: "2.9 g"
+  azucares_totales_porcion: "0 g"
+
+  azucares_anadidos_100: "0 g"
+  azucares_anadidos_porcion: "0 g"
+
+  proteina_100: "10.0 g"
+  proteina_porcion: "0.30 g"
+
+  sodio_100: "30 mg"
+  sodio_porcion: "1.0 mg"
+
+  colesterol_100: "0 mg"
+  colesterol_porcion: "0 mg"

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import os
 from pathlib import Path
 import subprocess
 import sys
@@ -13,13 +14,17 @@ DEFAULT_TEMPLATE = "tabla_nutricional_generica.typ"
 
 
 def run_typst_compile(template_path: Path, output_path: Path, data_path: Path) -> None:
+    # Typst resolves paths in yaml() relative to the .typ file
+    rel_data_path = os.path.relpath(data_path, template_path.parent)
     command = [
         "typst",
         "compile",
         str(template_path),
         str(output_path),
+        "--root",
+        str(ROOT),
         "--input",
-        f"data={data_path.relative_to(ROOT)}",
+        f"data={rel_data_path}",
     ]
     subprocess.run(command, check=True, cwd=ROOT)
 

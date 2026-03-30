@@ -7,7 +7,7 @@
   numbering: none,
 )
 
-#set text(font: "Arial", size: 11pt, lang: "es")
+#set text(size: 11pt, lang: "es")
 
 #let rotatex(body, angle: -90deg) = context {
   let size = measure(body)
@@ -20,7 +20,7 @@
   )
 }
 
-#let data-path = sys.inputs.at("data", default: "data/aceite_coco_200ml.yaml")
+#let data-path = sys.inputs.at("data", default: "../data/aceite_coco_200ml.yaml")
 #let producto = yaml(data-path)
 #let encabezado_100 = producto.columnas.at("columna_100", default: "Por 100 mL")
 #let encabezado_porcion = producto.columnas.at("columna_porcion", default: "Por porción")
