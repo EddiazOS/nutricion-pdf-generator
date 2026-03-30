@@ -1,0 +1,59 @@
+empresa:
+  nombre: "ASOCAMPROS"
+  origen: "Colombia"
+
+contenido_neto: "50 g"
+porcion_texto: "1 unidad (50 g)"
+porciones_por_envase: 1
+
+columnas:
+  columna_100: "Por 100 g"
+  columna_porcion: "Por porción (50 g)"
+
+textos:
+  ingredientes: "Lenteja cocida, zanahoria cocida, remolacha cocida, sal y condimentos."
+  alergenos: "No se declaran alérgenos comunes."
+  uso_sugerido: "Consumir cocido a la plancha, parrilla o en preparaciones culinarias."
+  conservacion: "Mantener refrigerado entre 2°C y 8°C. Una vez abierto, consumir en 3 días."
+
+nutricion:
+  calorias_100: 94
+  calorias_porcion: 47
+  calorias_grasa_100: 3
+  calorias_grasa_porcion: 2
+
+  grasa_total_100: "0.32 g"
+  grasa_total_porcion: "0.16 g"
+
+  grasa_saturada_100: "0.04 g"
+  grasa_saturada_porcion: "0.02 g"
+
+  grasa_trans_100: "0 g"
+  grasa_trans_porcion: "0 g"
+
+  grasa_mono_100: "0.05 g"
+  grasa_mono_porcion: "0.02 g"
+
+  grasa_poli_100: "0.15 g"
+  grasa_poli_porcion: "0.07 g"
+
+  carbohidratos_100: "16.9 g"
+  carbohidratos_porcion: "8.5 g"
+
+  fibra_100: "6.5 g"
+  fibra_porcion: "3.2 g"
+
+  azucares_totales_100: "2.6 g"
+  azucares_totales_porcion: "1.3 g"
+
+  azucares_anadidos_100: "0 g"
+  azucares_anadidos_porcion: "0 g"
+
+  proteina_100: "6.8 g"
+  proteina_porcion: "3.4 g"
+
+  sodio_100: "707 mg"
+  sodio_porcion: "354 mg"
+
+  colesterol_100: "0 mg"
+  colesterol_porcion: "0 mg"
