@@ -155,18 +155,21 @@
       height: 19cm,
       stroke: thick-line,
       inset: 8pt,
-      rotatex(
-        box(width: 18cm)[
-          #text(size: 9pt)[
-            *INGREDIENTES:* #(producto.textos.ingredientes) \
-            *ALÉRGENOS:* #(producto.textos.alergenos) \
-            *USO SUGERIDO:* #(producto.textos.uso_sugerido) \
-            *FABRICANTE:* #(producto.empresa.nombre) \
-            *ORIGEN:* #(producto.empresa.origen) \
-            *CONTENIDO NETO:* #(producto.contenido_neto) \
-            *CONSERVACIÓN:* #(producto.textos.conservacion)
+      clip: false,
+      align(center + horizon,
+        rotatex(
+          box(width: 19.5cm)[
+            #text(size: 9pt)[
+              *INGREDIENTES:* #(producto.textos.ingredientes) \
+              *ALÉRGENOS:* #(producto.textos.alergenos) \
+              *USO SUGERIDO:* #(producto.textos.uso_sugerido) \
+              *FABRICANTE:* #(producto.empresa.nombre) \
+              *ORIGEN:* #(producto.empresa.origen) \
+              *CONTENIDO NETO:* #(producto.contenido_neto) \
+              *CONSERVACIÓN:* #(producto.textos.conservacion)
+            ]
           ]
-        ]
+        )
       )
     )
   ]
