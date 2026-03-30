@@ -161,7 +161,7 @@
           box(width: 19.5cm)[
             #text(size: 9pt)[
               *INGREDIENTES:* #(producto.textos.ingredientes) \
-              *ALÉRGENOS:* #(producto.textos.alergenos) \
+              *ALÉRGENOS:* #(producto.textos.alergenos) 
               *USO SUGERIDO:* #(producto.textos.uso_sugerido) \
               *FABRICANTE:* #(producto.empresa.nombre) \
               *ORIGEN:* #(producto.empresa.origen) \
