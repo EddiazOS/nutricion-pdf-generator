@@ -1,0 +1,59 @@
+empresa:
+  nombre: "COMAEB"
+  origen: "Colombia"
+
+contenido_neto: "500 g"
+porcion_texto: "1 cucharada (15 g)"
+porciones_por_envase: 33
+
+columnas:
+  columna_100: "Por 100 g"
+  columna_porcion: "Por porción (15 g)"
+
+textos:
+  ingredientes: "Pulpa de guayaba, azúcar, pectina natural (cáscara de maracuyá o pomelo) y ácido cítrico."
+  alergenos: "No se declaran alérgenos comunes."
+  uso_sugerido: "Consumir con pan, galletas o acompañante de queso. Mantener refrigerado una vez abierto."
+  conservacion: "Mantener en lugar fresco y seco. Una vez abierto, refrigerar entre 2°C y 8°C y consumir en 15 días."
+
+nutricion:
+  calorias_100: 204
+  calorias_porcion: 31
+  calorias_grasa_100: 4
+  calorias_grasa_porcion: 1
+
+  grasa_total_100: "0.41 g"
+  grasa_total_porcion: "0.06 g"
+
+  grasa_saturada_100: "0.12 g"
+  grasa_saturada_porcion: "0.02 g"
+
+  grasa_trans_100: "0 g"
+  grasa_trans_porcion: "0 g"
+
+  grasa_mono_100: "0.04 g"
+  grasa_mono_porcion: "0.01 g"
+
+  grasa_poli_100: "0.17 g"
+  grasa_poli_porcion: "0.03 g"
+
+  carbohidratos_100: "49.7 g"
+  carbohidratos_porcion: "7.5 g"
+
+  fibra_100: "2.4 g"
+  fibra_porcion: "0.35 g"
+
+  azucares_totales_100: "47.4 g"
+  azucares_totales_porcion: "7.1 g"
+
+  azucares_anadidos_100: "43.5 g"
+  azucares_anadidos_porcion: "6.5 g"
+
+  proteina_100: "1.1 g"
+  proteina_porcion: "0.17 g"
+
+  sodio_100: "1.3 mg"
+  sodio_porcion: "0.2 mg"
+
+  colesterol_100: "0 mg"
+  colesterol_porcion: "0 mg"
